@@ -15,7 +15,7 @@
 
       // Load your 3D model from GitHub
       const loader = new THREE.GLTFLoader();
-      loader.load('Pizza (1).glb', (gltf) => {
+      loader.load('https://github.com/karan-len/Test/raw/main/Pizza.glb', (gltf) => {
         const model = gltf.scene;
         scene.add(model);
       });
