@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script> <!-- Add this line -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
   </head>
   <body>
     <script>
@@ -15,7 +15,7 @@
 
       // Load your 3D model from GitHub
       const loader = new THREE.GLTFLoader();
-      loader.load('https://github.com/karan-len/Test/raw/main/Pizza.glb', (gltf) => {
+      loader.load('https://github.com/karan-len/Test/blob/ca1a087d64639dc0dfe10a7c71e3217430552f1a/Pizza%20(1).glb', (gltf) => {
         const model = gltf.scene;
         scene.add(model);
       });
@@ -32,4 +32,5 @@
     </script>
   </body>
 </html>
+
 
