@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <div id="qrcode"></div>
+    <!-- Add a link to open the AR experience -->
+    <a href="ar-experience.html">Open AR Experience</a>
+
+    <script>
+      // Function to generate and display the QR code
+      function generateQRCode() {
+        // Replace this URL with the actual URL to your AR experience HTML file
+        const arExperienceURL = 'ar-experience.html';
+        
+        // Create a QR code generator instance
+        const qrcode = new QRCode(document.getElementById("qrcode"), {
+          text: arExperienceURL,
+          width: 128,
+          height: 128
+        });
+      }
+
+      // Call the generateQRCode function when the page loads
+      window.onload = generateQRCode;
+    </script>
+  </body>
+</html>
